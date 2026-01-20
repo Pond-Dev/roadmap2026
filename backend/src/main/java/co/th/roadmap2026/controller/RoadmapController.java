@@ -20,4 +20,9 @@ public class RoadmapController {
     public RoadmapNode getJavaRoadmap() {
         return roadmapService.getJavaRoadmap();
     }
+
+    @GetMapping("/backend")
+    public RoadmapNode getBackendRoadmap() {
+        return roadmapService.getBackendRoadmap();
+    }
 }
