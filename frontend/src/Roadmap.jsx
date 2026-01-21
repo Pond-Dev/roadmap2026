@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { Box, CircularProgress, Backdrop } from "@mui/material";
 import RoadmapHeader from "./components/RoadmapHeader";
-import RoadmapNode from "./components/RoadmapNode";
+import RoadmapTopic from "./components/RoadmapTopic";
 import RoadmapDetail from "./components/RoadmapDetail";
-import { getRoadmap } from "./services/roadmapService";
+import { getRoadmap, getTopicContent } from "./services/roadmapService";
 import "./Roadmap.css";
 
 export default function Roadmap() {
   const [data, setData] = useState(null);
   const [roadmapId, setRoadmapId] = useState("java");
-  const [selectedNode, setSelectedNode] = useState(null);
+  const [selectedTopic, setSelectedTopic] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const fetchRoadmapData = async (id) => {
@@ -17,11 +17,24 @@ export default function Roadmap() {
     try {
       const result = await getRoadmap(id);
       setData(result);
-      setSelectedNode(null);
+      setSelectedTopic(null);
     } catch (error) {
       console.error(error);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleTopicClick = async (topic) => {
+    if (!topic) {
+      setSelectedTopic(null);
+      return;
+    }
+    try {
+      const fullTopic = await getTopicContent(roadmapId, topic.id);
+      setSelectedTopic(fullTopic);
+    } catch (error) {
+      console.error("Error fetching topic details:", error);
     }
   };
 
@@ -45,10 +58,7 @@ export default function Roadmap() {
 
   return (
     <Box className="roadmap-container">
-      <Backdrop
-        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
-        open={loading}
-      >
+      <Backdrop sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }} open={loading}>
         <CircularProgress color="inherit" />
       </Backdrop>
 
@@ -60,21 +70,14 @@ export default function Roadmap() {
       />
 
       <Box className="roadmap-main">
-        <Box className="roadmap-tree">
+        <Box className={`roadmap-tree ${selectedTopic ? "roadmap-tree--reformed" : ""}`}>
           {data.children?.map((child) => (
-            <RoadmapNode
-              key={child.id}
-              node={child}
-              onNodeClick={setSelectedNode}
-            />
+            <RoadmapTopic key={child.id} topic={child} onTopicClick={handleTopicClick} />
           ))}
         </Box>
 
-        {selectedNode && (
-          <RoadmapDetail
-            node={selectedNode}
-            onClose={() => setSelectedNode(null)}
-          />
+        {selectedTopic && (
+          <RoadmapDetail topic={selectedTopic} onClose={() => setSelectedTopic(null)} />
         )}
       </Box>
     </Box>

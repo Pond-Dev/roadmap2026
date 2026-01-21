@@ -4,17 +4,12 @@ import CircleIcon from "@mui/icons-material/Circle";
 import ReactMarkdown from "react-markdown";
 import "./RoadmapDetail.css";
 
-const RoadmapDetail = ({ node, onClose }) => {
+const RoadmapDetail = ({ topic, onClose }) => {
   return (
     <Paper elevation={4} className="detail-panel">
       <Box className="detail-header">
-        <Typography
-          variant="h5"
-          component="h2"
-          fontWeight="bold"
-          color="primary"
-        >
-          {node.label}
+        <Typography variant="h5" component="h2" fontWeight="bold" color="primary">
+          {topic.label}
         </Typography>
         <IconButton onClick={onClose}>
           <CloseIcon />
@@ -22,9 +17,9 @@ const RoadmapDetail = ({ node, onClose }) => {
       </Box>
 
       <Box className="detail-content">
-        {node.content ? (
+        {topic.content ? (
           <Box className="markdown-content">
-            <ReactMarkdown>{node.content}</ReactMarkdown>
+            <ReactMarkdown>{topic.content}</ReactMarkdown>
           </Box>
         ) : (
           <Box className="empty-state">

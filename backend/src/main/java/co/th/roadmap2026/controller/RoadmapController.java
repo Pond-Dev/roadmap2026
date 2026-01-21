@@ -1,8 +1,9 @@
 package co.th.roadmap2026.controller;
 
-import co.th.roadmap2026.model.RoadmapNode;
+import co.th.roadmap2026.model.RoadmapTopic;
 import co.th.roadmap2026.service.RoadmapService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,12 +18,22 @@ public class RoadmapController {
     }
 
     @GetMapping("/java")
-    public RoadmapNode getJavaRoadmap() {
+    public RoadmapTopic getJavaRoadmap() {
         return roadmapService.getJavaRoadmap();
     }
 
     @GetMapping("/backend")
-    public RoadmapNode getBackendRoadmap() {
+    public RoadmapTopic getBackendRoadmap() {
         return roadmapService.getBackendRoadmap();
+    }
+
+    @GetMapping("/{roadmapId}/structure")
+    public RoadmapTopic getRoadmapStructure(@PathVariable String roadmapId) {
+        return roadmapService.getRoadmapStructure(roadmapId);
+    }
+
+    @GetMapping("/{roadmapId}/topics/{topicId}")
+    public RoadmapTopic getTopicContent(@PathVariable String roadmapId, @PathVariable String topicId) {
+        return roadmapService.getTopicContent(roadmapId, topicId);
     }
 }
