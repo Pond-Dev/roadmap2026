@@ -1,17 +1,21 @@
 package co.th.roadmap2026.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class RoadmapTopic {
     private String id;
     private String label;
     private String description;
     private String content;
     private String status;
-    private String level; // JUNIOR, MID, SENIOR, EXPERT
+    private String level; 
     private List<RoadmapTopic> children = new ArrayList<>();
 
     public RoadmapTopic(String id, String label, String description) {
@@ -50,7 +54,6 @@ public class RoadmapTopic {
         RoadmapTopic structure = new RoadmapTopic(this.id, this.label, this.description);
         structure.setStatus(this.status);
         structure.setLevel(this.level);
-        // Do not copy content
         for (RoadmapTopic child : this.children) {
             structure.addChild(child.toStructure());
         }

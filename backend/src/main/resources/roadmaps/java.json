@@ -1,0 +1,581 @@
+{
+  "id": "java",
+  "label": "Java Developer",
+  "description": "Complete Java Developer Roadmap 2026",
+  "level": "JUNIOR",
+  "children": [
+    {
+      "id": "fundamentals",
+      "label": "Learn the Fundamentals",
+      "description": "พื้นฐาน Java",
+      "level": "JUNIOR",
+      "children": [
+        {
+          "id": "syntax",
+          "label": "Basic Syntax",
+          "description": "Syntax พื้นฐาน",
+          "level": "JUNIOR",
+          "content": "# Basic Syntax\n## 📋 Prerequisites: None\n## 🎯 Topics\n- Structure of Java program\n- main() method\n- Comments (single, multi, Javadoc)\n- Naming conventions\n"
+        },
+        {
+          "id": "datatypes",
+          "label": "Data Types",
+          "description": "ชนิดข้อมูล",
+          "level": "JUNIOR",
+          "content": "# Data Types\n## 🎯 Topics\n- Primitive: byte, short, int, long, float, double, boolean, char\n- Reference: String, Arrays, Objects\n- Wrapper Classes: Integer, Double, etc.\n- Type Casting\n"
+        },
+        {
+          "id": "variables",
+          "label": "Variables",
+          "description": "ตัวแปร",
+          "level": "JUNIOR",
+          "content": "# Variables (ตัวแปร)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **การประกาศตัวแปร**: int age = 25;\n- **Scope**: Local, Instance, Static variable\n- **Final keyword**: ค่าคงที่ที่แก้ไขไม่ได้\n- **Variable Naming**: camelCase convention\n\n## 💡 ตัวอย่าง\n```java\nint number = 10;        // Local variable\nfinal double PI = 3.14; // Constant\nString name = \"Java\";   // Reference type\n```\n\n## 📚 แหล่งเรียนรู้\n- Oracle Java Tutorials\n- W3Schools Java Variables\n"
+        },
+        {
+          "id": "conditionals",
+          "label": "Conditionals",
+          "description": "เงื่อนไข",
+          "level": "JUNIOR",
+          "content": "# Conditionals\n- if / else / else if\n- switch statements\n- switch expressions (Java 14+)\n- Ternary operator\n"
+        },
+        {
+          "id": "loops",
+          "label": "Loops",
+          "description": "การวนซ้ำ",
+          "level": "JUNIOR",
+          "content": "# Loops (การวนซ้ำ)\n## 🎯 ประเภทของ Loop\n- **for loop**: วนซ้ำจำนวนครั้งที่รู้แน่นอน\n- **while loop**: วนซ้ำตามเงื่อนไข\n- **do-while**: ทำก่อนแล้วค่อยเช็คเงื่อนไข\n- **for-each**: วนซ้ำผ่าน Array/Collection\n\n## 💡 ตัวอย่าง\n```java\n// for loop\nfor (int i = 0; i < 5; i++) { }\n\n// for-each\nfor (String item : items) { }\n\n// while\nwhile (condition) { }\n```\n\n## ⚡ Keywords สำคัญ\n- **break**: หยุดการวนซ้ำทันที\n- **continue**: ข้ามไปรอบถัดไป\n"
+        },
+        {
+          "id": "functions",
+          "label": "Functions",
+          "description": "ฟังก์ชัน",
+          "level": "JUNIOR",
+          "content": "# Functions / Methods (ฟังก์ชัน)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **Method Declaration**: การประกาศ method\n- **Parameters**: ค่าที่ส่งเข้า method\n- **Return Type**: ชนิดข้อมูลที่ return\n- **Method Overloading**: method ชื่อเดียวกัน parameter ต่างกัน\n\n## 💡 ตัวอย่าง\n```java\n// Method ที่ return ค่า\npublic int add(int a, int b) {\n    return a + b;\n}\n\n// Method ที่ไม่ return (void)\npublic void printHello() {\n    System.out.println(\"Hello\");\n}\n```\n\n## 📌 Access Modifiers\n- public, private, protected, default\n"
+        },
+        {
+          "id": "exceptions",
+          "label": "Exception Handling",
+          "description": "การจัดการ Exceptions",
+          "level": "JUNIOR",
+          "content": "# Exception Handling\n- try / catch / finally\n- throw / throws\n- Checked vs Unchecked\n- Custom Exceptions\n"
+        }
+      ]
+    },
+    {
+      "id": "oop",
+      "label": "Object Oriented Programming",
+      "description": "OOP",
+      "level": "MID",
+      "children": [
+        {
+          "id": "classes",
+          "label": "Classes",
+          "description": "คลาส",
+          "level": "MID",
+          "content": "# Classes (คลาส)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **Class คือ**: พิมพ์เขียว (blueprint) สำหรับสร้าง Objects\n- **ส่วนประกอบ**: Fields, Methods, Constructors\n- **Constructors**: method พิเศษสำหรับสร้าง object\n\n## 💡 ตัวอย่าง\n```java\npublic class Person {\n    // Fields (Properties)\n    private String name;\n    private int age;\n    \n    // Constructor\n    public Person(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n    \n    // Methods\n    public void introduce() {\n        System.out.println(\"Hi, I'm \" + name);\n    }\n}\n```\n"
+        },
+        {
+          "id": "objects",
+          "label": "Objects",
+          "description": "อ็อบเจกต์",
+          "level": "MID",
+          "content": "# Objects (อ็อบเจกต์)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **Object คือ**: Instance ที่สร้างจาก Class\n- **การสร้าง Object**: ใช้ keyword `new`\n- **เข้าถึง Properties/Methods**: ใช้ dot notation\n\n## 💡 ตัวอย่าง\n```java\n// สร้าง Object จาก Class\nPerson person1 = new Person(\"สมชาย\", 25);\nPerson person2 = new Person(\"สมศรี\", 22);\n\n// เรียกใช้ method\nperson1.introduce();\n\n// เข้าถึง property (ผ่าน getter)\nString name = person1.getName();\n```\n\n## 📌 Object Lifecycle\n- สร้าง → ใช้งาน → Garbage Collection\n"
+        },
+        {
+          "id": "interfaces",
+          "label": "Interfaces",
+          "description": "อินเทอร์เฟซ",
+          "level": "MID",
+          "content": "# Interfaces (อินเทอร์เฟซ)\n## 🎯 Interfaces คืออะไร?\n- **สัญญา (Contract)** ที่ Class ต้องทำตาม\n- มีเฉพาะ method signatures (ไม่มี implementation)\n- Class สามารถ implement หลาย Interfaces ได้\n\n## 💡 ตัวอย่าง\n```java\n// ประกาศ Interface\npublic interface Animal {\n    void makeSound();  // Abstract method\n    void move();\n}\n\n// Implement Interface\npublic class Dog implements Animal {\n    @Override\n    public void makeSound() {\n        System.out.println(\"Woof!\");\n    }\n    \n    @Override\n    public void move() {\n        System.out.println(\"Running...\");\n    }\n}\n```\n\n## ⚡ Java 8+: Default Methods\n- Interface สามารถมี default implementation ได้\n"
+        },
+        {
+          "id": "inheritance",
+          "label": "Inheritance",
+          "description": "การสืบทอด",
+          "level": "MID",
+          "content": "# Inheritance (การสืบทอด)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **extends**: ใช้สืบทอดจาก Parent class\n- **super**: เรียกใช้ของ Parent class\n- **Method Overriding**: เขียนทับ method ของ Parent\n\n## 💡 ตัวอย่าง\n```java\n// Parent Class\npublic class Animal {\n    public void eat() {\n        System.out.println(\"Eating...\");\n    }\n}\n\n// Child Class\npublic class Dog extends Animal {\n    @Override\n    public void eat() {\n        super.eat();  // เรียก parent method\n        System.out.println(\"Dog is eating\");\n    }\n    \n    public void bark() {\n        System.out.println(\"Woof!\");\n    }\n}\n```\n\n## 📌 หมายเหตุ\n- Java รองรับ Single Inheritance เท่านั้น\n"
+        },
+        {
+          "id": "polymorphism",
+          "label": "Polymorphism",
+          "description": "พหุสัณฐาน",
+          "level": "MID",
+          "content": "# Polymorphism (พหุสัณฐาน)\n## 🎯 หมายถึง \"หลายรูปแบบ\"\n- Object เดียวสามารถมีพฤติกรรมต่างกันได้\n\n## 📌 2 ประเภท\n### 1. Compile-time (Method Overloading)\n```java\npublic int add(int a, int b) { return a + b; }\npublic double add(double a, double b) { return a + b; }\n```\n\n### 2. Runtime (Method Overriding)\n```java\nAnimal animal = new Dog();  // Polymorphism!\nanimal.makeSound();  // เรียก Dog's makeSound()\n\nAnimal animal2 = new Cat();\nanimal2.makeSound();  // เรียก Cat's makeSound()\n```\n\n## 💡 ประโยชน์\n- เขียน code ที่ยืดหยุ่น\n- รองรับการขยายระบบ\n- ลด code ซ้ำซ้อน\n"
+        },
+        {
+          "id": "abstraction",
+          "label": "Abstraction",
+          "description": "Abstraction",
+          "level": "MID",
+          "content": "# Abstraction (การนามธรรม)\n## 🎯 แนวคิด\n- ซ่อนรายละเอียดที่ซับซ้อน แสดงเฉพาะสิ่งจำเป็น\n- ทำได้ผ่าน Abstract Class หรือ Interface\n\n## 💡 ตัวอย่าง Abstract Class\n```java\n// Abstract Class - ไม่สามารถสร้าง instance ได้โดยตรง\npublic abstract class Shape {\n    // Abstract method - ไม่มี body\n    public abstract double getArea();\n    \n    // Concrete method - มี implementation\n    public void display() {\n        System.out.println(\"Area: \" + getArea());\n    }\n}\n\n// Concrete Class\npublic class Circle extends Shape {\n    private double radius;\n    \n    @Override\n    public double getArea() {\n        return Math.PI * radius * radius;\n    }\n}\n```\n\n## 📌 Abstract vs Interface\n- Abstract: มี state (fields) และ partial implementation ได้\n- Interface: เน้น contract/behavior\n"
+        },
+        {
+          "id": "encapsulation",
+          "label": "Encapsulation",
+          "description": "Encapsulation",
+          "level": "MID",
+          "content": "# Encapsulation (การห่อหุ้ม)\n## 🎯 แนวคิด\n- ซ่อน data จากภายนอก (data hiding)\n- เข้าถึงผ่าน getter/setter methods\n- ป้องกันการแก้ไข data โดยตรง\n\n## 💡 ตัวอย่าง\n```java\npublic class BankAccount {\n    // Private field - ซ่อนจากภายนอก\n    private double balance;\n    \n    // Getter - อ่านค่า\n    public double getBalance() {\n        return balance;\n    }\n    \n    // Setter with validation - เขียนค่า\n    public void deposit(double amount) {\n        if (amount > 0) {\n            balance += amount;\n        }\n    }\n    \n    public boolean withdraw(double amount) {\n        if (amount > 0 && amount <= balance) {\n            balance -= amount;\n            return true;\n        }\n        return false;\n    }\n}\n```\n\n## 📌 ประโยชน์\n- ควบคุมการเข้าถึง data\n- Validation ก่อนแก้ไข\n- ลด coupling ระหว่าง classes\n"
+        }
+      ]
+    },
+    {
+      "id": "data-structures",
+      "label": "Data Structures",
+      "description": "โครงสร้างข้อมูล",
+      "level": "MID",
+      "children": [
+        {
+          "id": "arrays",
+          "label": "Arrays",
+          "description": "อาร์เรย์",
+          "level": "MID",
+          "content": "# Arrays (อาร์เรย์)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: โครงสร้างเก็บข้อมูลชนิดเดียวกันขนาดคงที่\n- **Fixed size**: ขนาดคงที่ แก้ไขไม่ได้\n- **Index เริ่มที่ 0**: ตัวแรกคือ index 0\n\n## 💡 ตัวอย่าง\n```java\n// ประกาศ Array\nint[] numbers = new int[5];\nString[] names = {\"A\", \"B\", \"C\"};\n\n// เข้าถึงและแก้ไข\nnumbers[0] = 10;\nSystem.out.println(names[1]); // \"B\"\n\n// วนซ้ำผ่าน Array\nfor (String name : names) {\n    System.out.println(name);\n}\n```\n\n## 📌 เมื่อไหร่ควรใช้?\n- ขนาดคงที่ ไม่เปลี่ยนแปลง\n- ต้องการ performance สูงสุด\n"
+        },
+        {
+          "id": "arraylist",
+          "label": "ArrayList",
+          "description": "ArrayList",
+          "level": "MID",
+          "content": "# ArrayList\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **Dynamic Array**: ขยายขนาดได้อัตโนมัติ\n- **เข้าถึงเร็ว**: O(1) สำหรับ get โดย index\n- **แทรกช้า**: O(n) เมื่อ insert กลาง\n\n## 💡 ตัวอย่าง\n```java\nimport java.util.ArrayList;\n\nArrayList<String> list = new ArrayList<>();\n\n// เพิ่มข้อมูล\nlist.add(\"แอปเปิ้ล\");\nlist.add(\"กล้วย\");\n\n// เข้าถึงข้อมูล\nString fruit = list.get(0); // \"แอปเปิ้ล\"\n\n// ลบข้อมูล\nlist.remove(1);\n\n// เช็คขนาด\nint size = list.size();\n```\n\n## 📌 เมื่อไหร่ควรใช้?\n- ขนาดไม่แน่นอน\n- เข้าถึงโดย index บ่อย\n"
+        },
+        {
+          "id": "linkedlist",
+          "label": "LinkedList",
+          "description": "LinkedList",
+          "level": "MID",
+          "content": "# LinkedList\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **โครงสร้าง**: Node ที่เชื่อมต่อกัน\n- **แทรกเร็ว**: O(1) สำหรับ insert/delete ต้น/ท้าย\n- **เข้าถึงช้า**: O(n) สำหรับ get โดย index\n\n## 💡 ตัวอย่าง\n```java\nimport java.util.LinkedList;\n\nLinkedList<String> list = new LinkedList<>();\n\n// เพิ่มต้น/ท้าย (เร็ว!)\nlist.addFirst(\"แรก\");\nlist.addLast(\"สุดท้าย\");\n\n// ดึงข้อมูลต้น/ท้าย\nString first = list.getFirst();\nString last = list.getLast();\n\n// ลบต้น/ท้าย\nlist.removeFirst();\nlist.removeLast();\n```\n\n## 📌 เมื่อไหร่ควรใช้?\n- Insert/Delete บ่อย โดยเฉพาะต้น/ท้าย\n- ใช้เป็น Queue หรือ Stack\n"
+        },
+        {
+          "id": "hashmap",
+          "label": "HashMap",
+          "description": "HashMap",
+          "level": "MID",
+          "content": "# HashMap\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **เก็บ Key-Value pairs**: เข้าถึง value ด้วย key\n- **เร็วมาก**: O(1) สำหรับ get/put/remove\n- **ไม่เรียงลำดับ**: ไม่รับประกันลำดับ\n\n## 💡 ตัวอย่าง\n```java\nimport java.util.HashMap;\n\nHashMap<String, Integer> scores = new HashMap<>();\n\n// เพิ่มข้อมูล\nscores.put(\"สมชาย\", 85);\nscores.put(\"สมศรี\", 92);\n\n// ดึงข้อมูล\nint score = scores.get(\"สมชาย\"); // 85\n\n// เช็คว่ามี key หรือไม่\nboolean exists = scores.containsKey(\"สมชาย\");\n\n// วนซ้ำผ่าน entries\nfor (var entry : scores.entrySet()) {\n    System.out.println(entry.getKey() + \": \" + entry.getValue());\n}\n```\n\n## 📌 เมื่อไหร่ควรใช้?\n- ต้องการ lookup เร็วด้วย key\n- เก็บความสัมพันธ์ของข้อมูล\n"
+        },
+        {
+          "id": "hashset",
+          "label": "HashSet",
+          "description": "HashSet",
+          "level": "MID",
+          "content": "# HashSet\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **เก็บข้อมูลไม่ซ้ำกัน**: ไม่ยอมให้ duplicate\n- **เร็วมาก**: O(1) สำหรับ add/remove/contains\n- **ไม่เรียงลำดับ**: ไม่รับประกันลำดับ\n\n## 💡 ตัวอย่าง\n```java\nimport java.util.HashSet;\n\nHashSet<String> fruits = new HashSet<>();\n\n// เพิ่มข้อมูล\nfruits.add(\"แอปเปิ้ล\");\nfruits.add(\"กล้วย\");\nfruits.add(\"แอปเปิ้ล\");  // ไม่ถูกเพิ่ม (ซ้ำ!)\n\n// เช็คว่ามีหรือไม่\nboolean exists = fruits.contains(\"แอปเปิ้ล\"); // true\n\n// ลบข้อมูล\nfruits.remove(\"กล้วย\");\n\n// ขนาด\nint size = fruits.size(); // 1\n```\n\n## 📌 เมื่อไหร่ควรใช้?\n- เก็บข้อมูลที่ไม่ซ้ำกัน\n- เช็คการมีอยู่เร็ว\n"
+        },
+        {
+          "id": "stack",
+          "label": "Stack",
+          "description": "Stack",
+          "level": "MID",
+          "content": "# Stack (สแต็ก)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **LIFO**: Last In, First Out (เข้าหลังออกก่อน)\n- **push**: เพิ่มข้อมูลบนสุด\n- **pop**: ดึงข้อมูลบนสุดออก\n\n## 💡 ตัวอย่าง\n```java\nimport java.util.Stack;\n\nStack<String> stack = new Stack<>();\n\n// Push - เพิ่มบนสุด\nstack.push(\"แรก\");\nstack.push(\"ที่สอง\");\nstack.push(\"ที่สาม\");\n\n// Pop - ดึงบนสุดออก\nString top = stack.pop(); // \"ที่สาม\"\n\n// Peek - ดูบนสุด (ไม่ดึงออก)\nString peek = stack.peek(); // \"ที่สอง\"\n\n// เช็คว่างหรือไม่\nboolean empty = stack.isEmpty();\n```\n\n## 📌 Use Cases\n- Undo/Redo operations\n- จัดการวงเล็บ\n- Browser back button\n"
+        },
+        {
+          "id": "queue",
+          "label": "Queue",
+          "description": "Queue",
+          "level": "MID",
+          "content": "# Queue (คิว)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **FIFO**: First In, First Out (เข้าก่อนออกก่อน)\n- **offer/add**: เพิ่มท้ายคิว\n- **poll/remove**: ดึงหัวคิวออก\n\n## 💡 ตัวอย่าง\n```java\nimport java.util.LinkedList;\nimport java.util.Queue;\n\nQueue<String> queue = new LinkedList<>();\n\n// Offer - เพิ่มท้ายคิว\nqueue.offer(\"คนที่ 1\");\nqueue.offer(\"คนที่ 2\");\nqueue.offer(\"คนที่ 3\");\n\n// Poll - ดึงหัวคิวออก\nString first = queue.poll(); // \"คนที่ 1\"\n\n// Peek - ดูหัวคิว (ไม่ดึงออก)\nString peek = queue.peek(); // \"คนที่ 2\"\n```\n\n## 📌 Use Cases\n- Task scheduling\n- จัดคิวงาน (BFS)\n- Message queue\n"
+        },
+        {
+          "id": "tree",
+          "label": "Tree",
+          "description": "Tree",
+          "level": "SENIOR",
+          "content": "# Tree (ต้นไม้)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **โครงสร้างแบบลำดับชั้น**: Root → Children → Leaves\n- **Binary Tree**: แต่ละ node มีลูกได้ ไม่เกิน 2 ตัว\n- **BST (Binary Search Tree)**: ซ้าย < parent < ขวา\n\n## 💡 โครงสร้าง Node\n```java\nclass TreeNode {\n    int value;\n    TreeNode left;\n    TreeNode right;\n    \n    TreeNode(int value) {\n        this.value = value;\n    }\n}\n```\n\n## 📌 Tree Traversal\n- **Inorder**: left → root → right\n- **Preorder**: root → left → right\n- **Postorder**: left → right → root\n- **Level order**: BFS\n\n## ⚡ Time Complexity (BST)\n- Search: O(log n) average, O(n) worst\n- Insert: O(log n) average\n"
+        },
+        {
+          "id": "graph",
+          "label": "Graph",
+          "description": "Graph",
+          "level": "SENIOR",
+          "content": "# Graph (กราฟ)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **Vertices (Nodes)**: จุดยอด\n- **Edges**: เส้นเชื่อมระหว่าง vertices\n- **Directed vs Undirected**: มีทิศทาง vs ไม่มีทิศทาง\n\n## 📌 วิธีเก็บข้อมูล\n### Adjacency Matrix\n```java\nint[][] graph = new int[n][n];\ngraph[0][1] = 1; // edge from 0 to 1\n```\n\n### Adjacency List\n```java\nList<List<Integer>> graph = new ArrayList<>();\nfor (int i = 0; i < n; i++) {\n    graph.add(new ArrayList<>());\n}\ngraph.get(0).add(1); // edge from 0 to 1\n```\n\n## ⚡ Algorithms สำคัญ\n- **BFS**: Breadth-First Search (Queue)\n- **DFS**: Depth-First Search (Stack/Recursion)\n- **Dijkstra**: Shortest path\n\n## 📌 Use Cases\n- Social networks\n- Maps/Navigation\n- Recommendation systems\n"
+        }
+      ]
+    },
+    {
+      "id": "algorithms",
+      "label": "Algorithms",
+      "description": "อัลกอริทึม",
+      "level": "MID",
+      "children": [
+        {
+          "id": "sorting",
+          "label": "Sorting",
+          "description": "การเรียงลำดับ",
+          "level": "MID",
+          "content": "# Sorting Algorithms\n- Bubble Sort\n- Selection Sort\n- Insertion Sort\n- Merge Sort\n- Quick Sort\n"
+        },
+        {
+          "id": "searching",
+          "label": "Searching",
+          "description": "การค้นหา",
+          "level": "MID",
+          "content": "# Searching Algorithms\n- Linear Search\n- Binary Search\n"
+        },
+        {
+          "id": "recursion",
+          "label": "Recursion",
+          "description": "การเรียกซ้ำ",
+          "level": "MID",
+          "content": "# Recursion (การเรียกซ้ำ)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: ฟังก์ชันที่เรียกตัวเอง\n- **Base Case**: เงื่อนไขหยุดการเรียกซ้ำ\n- **Recursive Case**: เรียกตัวเองและลดขนาดปัญหา\n\n## 💡 ตัวอย่าง: Factorial\n```java\n// 5! = 5 × 4 × 3 × 2 × 1 = 120\npublic int factorial(int n) {\n    // Base case\n    if (n <= 1) return 1;\n    \n    // Recursive case\n    return n * factorial(n - 1);\n}\n```\n\n## 💡 ตัวอย่าง: Fibonacci\n```java\n// 0, 1, 1, 2, 3, 5, 8, 13...\npublic int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\n```\n\n## ⚠️ ข้อควรระวัง\n- **Stack Overflow**: เมื่อเรียกลึกเกินไป\n- ต้องมี Base Case เสมอ!\n\n## 📌 Use Cases\n- Tree/Graph traversal\n- Divide and Conquer algorithms\n- Backtracking problems\n"
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced Java",
+      "description": "Java ขั้นสูง",
+      "level": "SENIOR",
+      "children": [
+        {
+          "id": "generics",
+          "label": "Generics",
+          "description": "Generics",
+          "level": "SENIOR",
+          "content": "# Generics\n- Type Parameters\n- Bounded Types\n- Wildcards (?, extends, super)\n"
+        },
+        {
+          "id": "collections",
+          "label": "Collections Framework",
+          "description": "Collections",
+          "level": "SENIOR",
+          "content": "# Collections Framework\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: ชุดของ Interfaces และ Classes สำหรับจัดการข้อมูล\n\n## 📌 หมวดหมู่หลัก\n### List Interface\n- ArrayList, LinkedList, Vector\n\n### Set Interface\n- HashSet, TreeSet, LinkedHashSet\n\n### Map Interface\n- HashMap, TreeMap, LinkedHashMap\n\n### Queue Interface\n- LinkedList, PriorityQueue, ArrayDeque\n\n## 💡 เลือกใช้ยังไง?\n| ความต้องการ | ใช้ |\n|---------|-----|\n| เรียงลำดับ + ซ้ำได้ | ArrayList |\n| ไม่ซ้ำ + เร็ว | HashSet |\n| Key-Value | HashMap |\n| เรียงลำดับ + ไม่ซ้ำ | TreeSet |\n"
+        },
+        {
+          "id": "streams",
+          "label": "Streams API",
+          "description": "Streams",
+          "level": "SENIOR",
+          "content": "# Streams API\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: วิธีประมวลผลข้อมูลแบบ functional\n- **Lazy Evaluation**: ทำงานเมื่อถึง terminal operation\n- **Immutable**: ไม่แก้ไข source data\n\n## 💡 ตัวอย่าง\n```java\nList<Integer> numbers = List.of(1, 2, 3, 4, 5);\n\n// Filter + Map + Collect\nList<Integer> doubled = numbers.stream()\n    .filter(n -> n % 2 == 0)  // เอาเฉพาะคู่\n    .map(n -> n * 2)          // คูณ 2\n    .collect(Collectors.toList());\n\n// Sum, Average\nint sum = numbers.stream().mapToInt(n -> n).sum();\n```\n\n## 📌 Operations สำคัญ\n**Intermediate**: filter, map, sorted, distinct\n**Terminal**: collect, forEach, reduce, count\n"
+        },
+        {
+          "id": "lambdas",
+          "label": "Lambda Expressions",
+          "description": "Lambdas",
+          "level": "SENIOR",
+          "content": "# Lambda Expressions\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: Anonymous function แบบสั้น\n- **Syntax**: (parameters) -> expression\n- **Functional Interface**: Interface ที่มี method เดียว\n\n## 💡 ตัวอย่าง\n```java\n// แบบเดิม (Anonymous Class)\nRunnable r1 = new Runnable() {\n    @Override\n    public void run() {\n        System.out.println(\"Hello\");\n    }\n};\n\n// แบบ Lambda\nRunnable r2 = () -> System.out.println(\"Hello\");\n\n// กับ Collection\nList<String> names = Arrays.asList(\"A\", \"B\", \"C\");\nnames.forEach(name -> System.out.println(name));\n\n// Method Reference\nnames.forEach(System.out::println);\n```\n\n## 📌 Built-in Functional Interfaces\n- Predicate<T>: T -> boolean\n- Function<T,R>: T -> R\n- Consumer<T>: T -> void\n- Supplier<T>: () -> T\n"
+        },
+        {
+          "id": "optionals",
+          "label": "Optionals",
+          "description": "Optional",
+          "level": "SENIOR",
+          "content": "# Optional<T>\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: Container ที่อาจมีหรือไม่มีค่า\n- **ป้องกัน NullPointerException**: จัดการ null อย่างปลอดภัย\n\n## 💡 ตัวอย่าง\n```java\nOptional<String> name = Optional.ofNullable(null);\n\n// เช็คว่ามีค่าไหม\nif (name.isPresent()) {\n    System.out.println(name.get());\n}\n\n// ดีกว่า: ifPresent\nname.ifPresent(System.out::println);\n\n// Default value\nString result = name.orElse(\"Unknown\");\nString result2 = name.orElseGet(() -> \"Default\");\n\n// Throw Exception\nString result3 = name.orElseThrow();\n```\n"
+        }
+      ]
+    },
+    {
+      "id": "concurrency",
+      "label": "Concurrency",
+      "description": "การทำงานพร้อมกัน",
+      "level": "SENIOR",
+      "children": [
+        {
+          "id": "threads",
+          "label": "Threads",
+          "description": "Threads",
+          "level": "SENIOR",
+          "content": "# Threads (เธรด)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: หน่วยการทำงานเล็กที่สุดของ process\n- **Multithreading**: ทำหลายอย่างพร้อมกัน\n\n## 💡 สร้าง Thread\n```java\n// วิธี 1: extends Thread\nclass MyThread extends Thread {\n    @Override\n    public void run() {\n        System.out.println(\"ทำงานใน Thread\");\n    }\n}\n\n// วิธี 2: implements Runnable\nRunnable task = () -> System.out.println(\"ทำงาน!\");\nThread thread = new Thread(task);\n\n// เริ่มทำงาน\nthread.start();\n\n// รอ Thread จบ\nthread.join();\n```\n\n## 📌 Thread States\nNEW → RUNNABLE → BLOCKED/WAITING → TERMINATED\n"
+        },
+        {
+          "id": "runnable",
+          "label": "Runnable & Callable",
+          "description": "Runnable/Callable",
+          "level": "SENIOR",
+          "content": "# Runnable vs Callable\n## 🎯 ความแตกต่าง\n| | Runnable | Callable |\n|---|---|---|\n| Return | void | V |\n| Exception | ไม่ได้ | ได้ |\n| Method | run() | call() |\n\n## 💡 ตัวอย่าง\n```java\n// Runnable: ไม่ return ค่า\nRunnable runnable = () -> {\n    System.out.println(\"ทำงาน...\");\n};\n\n// Callable: return ค่าได้\nCallable<Integer> callable = () -> {\n    return 42;\n};\n\n// เรียกใช้ Callable ผ่าน ExecutorService\nExecutorService executor = Executors.newSingleThreadExecutor();\nFuture<Integer> future = executor.submit(callable);\nInteger result = future.get(); // รอและรับค่า\n```\n"
+        },
+        {
+          "id": "executors",
+          "label": "Executor Service",
+          "description": "Executors",
+          "level": "SENIOR",
+          "content": "# Executor Service\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: Framework จัดการ Thread Pool\n- **ทำไม**: ประหยัดทรัพยากร, ผลลัพธ์ดีกว่า\n\n## 💡 ประเภท Executor\n```java\n// Single Thread\nExecutorService single = Executors.newSingleThreadExecutor();\n\n// Fixed Thread Pool\nExecutorService fixed = Executors.newFixedThreadPool(4);\n\n// Cached Thread Pool (ขยายได้)\nExecutorService cached = Executors.newCachedThreadPool();\n\n// Scheduled\nScheduledExecutorService scheduled = Executors.newScheduledThreadPool(2);\n```\n\n## 💡 การใช้งาน\n```java\nExecutorService executor = Executors.newFixedThreadPool(4);\n\n// Submit tasks\nexecutor.submit(() -> System.out.println(\"งาน 1\"));\nexecutor.submit(() -> System.out.println(\"งาน 2\"));\n\n// ปิด executor เมื่อเสร็จ\nexecutor.shutdown();\n```\n"
+        },
+        {
+          "id": "synchronization",
+          "label": "Synchronization",
+          "description": "Sync",
+          "level": "SENIOR",
+          "content": "# Synchronization\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **ทำไมต้อง**: ป้องกัน Race Condition\n- **Race Condition**: หลาย threads แก้ข้อมูลพร้อมกัน\n\n## 💡 synchronized keyword\n```java\npublic class Counter {\n    private int count = 0;\n    \n    // Synchronized method\n    public synchronized void increment() {\n        count++;\n    }\n    \n    // Synchronized block\n    public void incrementBlock() {\n        synchronized (this) {\n            count++;\n        }\n    }\n}\n```\n\n## 📌 volatile keyword\n```java\n// รับประกันว่าอ่านค่าล่าสุดจาก main memory\nprivate volatile boolean running = true;\n```\n\n## ⚠️ Deadlock\n- เกิดเมื่อ threads รอ lock ซึ่งกันและกัน\n"
+        },
+        {
+          "id": "locks",
+          "label": "Locks",
+          "description": "Locks",
+          "level": "SENIOR",
+          "content": "# Locks\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **ทำไมใช้**: ยืดหยุ่นกว่า synchronized\n- สามารถ try-lock, timeout, และอื่นๆ\n\n## 💡 ReentrantLock\n```java\nimport java.util.concurrent.locks.ReentrantLock;\n\nReentrantLock lock = new ReentrantLock();\n\npublic void doSomething() {\n    lock.lock();\n    try {\n        // Critical section\n    } finally {\n        lock.unlock(); // ต้อง unlock เสมอ!\n    }\n}\n\n// Try lock with timeout\nif (lock.tryLock(1, TimeUnit.SECONDS)) {\n    try {\n        // ได้ lock\n    } finally {\n        lock.unlock();\n    }\n}\n```\n\n## 📌 ReadWriteLock\n- หลาย readers อ่านพร้อมกันได้\n- เขียนได้ทีละคน\n"
+        },
+        {
+          "id": "completable-future",
+          "label": "CompletableFuture",
+          "description": "Async",
+          "level": "SENIOR",
+          "content": "# CompletableFuture\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: Async programming แบบ modern\n- **ทำไม**: เขียน async code ง่ายขึ้น\n\n## 💡 ตัวอย่าง\n```java\n// ทำงานแบบ async\nCompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {\n    return \"ดึงข้อมูล...\"; // ทำงานใน background\n});\n\n// นำผลลัพธ์ไปทำต่อ\nCompletableFuture<Integer> processed = future\n    .thenApply(str -> str.length())    // แปลงข้อมูล\n    .thenApply(len -> len * 2);         // คูณ 2\n\n// รวมหลาย futures\nCompletableFuture<Void> all = CompletableFuture.allOf(\n    future1, future2, future3\n);\n\n// รับตัวที่เสร็จก่อน\nObject result = CompletableFuture.anyOf(f1, f2).get();\n```\n\n## 📌 จัดการ Exception\n```java\nfuture.exceptionally(ex -> \"fallback value\");\n```\n"
+        },
+        {
+          "id": "virtual-threads",
+          "label": "Virtual Threads",
+          "description": "Java 21+",
+          "level": "EXPERT",
+          "content": "# Virtual Threads (Java 21+)\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **คืออะไร**: Lightweight threads จัดการโดย JVM\n- **เบามาก**: สร้างได้เป็นล้านๆ threads\n- **เหมาะกับ**: I/O-bound tasks\n\n## 💡 การสร้าง\n```java\n// สร้าง Virtual Thread\nThread.ofVirtual().start(() -> {\n    System.out.println(\"Virtual Thread!\");\n});\n\n// สร้างผ่าน Executor\ntry (var executor = Executors.newVirtualThreadPerTaskExecutor()) {\n    executor.submit(() -> task1());\n    executor.submit(() -> task2());\n    // สร้าง virtual thread ใหม่ทุก task!\n}\n```\n\n## ✅ vs Platform Threads\n| Platform | Virtual |\n|---|---|\n| OS-managed | JVM-managed |\n| โหลด memory สูง | memory ต่ำ |\n| สร้างได้จำกัด | สร้างได้เยอะ |\n"
+        }
+      ]
+    },
+    {
+      "id": "jvm",
+      "label": "JVM Internals",
+      "description": "JVM",
+      "level": "EXPERT",
+      "children": [
+        {
+          "id": "memory",
+          "label": "Memory Management",
+          "description": "Memory",
+          "level": "EXPERT",
+          "content": "# JVM Memory Management\n## 🎯 Memory Areas\n- **Heap**: เก็บ objects (Young Gen, Old Gen)\n- **Stack**: เก็บ local variables, method calls\n- **Metaspace**: เก็บ class metadata (Java 8+)\n\n## 💡 Heap Structure\n```\nHeap\n├── Young Generation\n│   ├── Eden Space (new objects)\n│   ├── Survivor 0\n│   └── Survivor 1\n└── Old Generation\n```\n\n## 📌 JVM Options\n- `-Xms`: Initial heap size\n- `-Xmx`: Max heap size\n- `-XX:MetaspaceSize`: Metaspace size\n"
+        },
+        {
+          "id": "gc",
+          "label": "Garbage Collection",
+          "description": "GC",
+          "level": "EXPERT",
+          "content": "# Garbage Collection\n## 🎯 คืออะไร?\n- กระบวนการลบ objects ที่ไม่ได้ใช้แล้วอัตโนมัติ\n\n## 📌 GC Types\n- **Serial GC**: Single thread, เหมาะกับ app เล็ก\n- **Parallel GC**: Multi-thread, default ใน Java 8\n- **G1 GC**: Low latency, default Java 9+\n- **ZGC**: Ultra-low latency, Java 11+\n\n## 💡 GC Tuning Options\n```bash\n-XX:+UseG1GC           # ใช้ G1 GC\n-XX:MaxGCPauseMillis=200\n-XX:+PrintGCDetails    # Debug\n```\n"
+        },
+        {
+          "id": "classloader",
+          "label": "ClassLoader",
+          "description": "ClassLoader",
+          "level": "EXPERT",
+          "content": "# ClassLoader\n## 🎯 คืออะไร?\n- โหลด .class files เข้า JVM\n\n## 📌 ClassLoader Hierarchy\n```\nBootstrap ClassLoader (JRE classes)\n└── Platform ClassLoader (Java 9+)\n    └── Application ClassLoader (your code)\n        └── Custom ClassLoaders\n```\n\n## 💡 Delegation Model\n- ถาม parent ก่อน, ถ้า parent โหลดไม่ได้ค่อยโหลดเอง\n"
+        },
+        {
+          "id": "jit",
+          "label": "JIT Compiler",
+          "description": "JIT",
+          "level": "EXPERT",
+          "content": "# JIT Compiler\n## 🎯 คืออะไร?\n- Just-In-Time: คอมไพล์ bytecode เป็น native code ขณะรัน\n\n## 📌 ทำไมต้อง JIT?\n- Bytecode ช้า → JIT แปลงเป็น native code เร็วขึ้น\n- Hot spots: code ที่ถูกเรียกบ่อยจะถูก optimize\n\n## 💡 Tiered Compilation\n- Level 0: Interpreter\n- Level 1-3: C1 Compiler (fast compile)\n- Level 4: C2 Compiler (optimized)\n\n## 📌 JVM Options\n```bash\n-XX:+TieredCompilation  # default\n-XX:CompileThreshold=10000\n```\n"
+        }
+      ]
+    },
+    {
+      "id": "build-tools",
+      "label": "Build Tools",
+      "description": "Build Tools",
+      "level": "MID",
+      "children": [
+        {
+          "id": "maven",
+          "label": "Maven",
+          "description": "Maven",
+          "level": "MID",
+          "content": "# Maven\n- pom.xml structure\n- Dependencies\n- Lifecycle phases\n- Plugins\n"
+        },
+        {
+          "id": "gradle",
+          "label": "Gradle",
+          "description": "Gradle",
+          "level": "MID",
+          "content": "# Gradle\n## 🎯 คืออะไร?\n- Build tool ใช้ Groovy/Kotlin DSL\n- เร็วกว่า Maven (incremental builds)\n\n## 💡 build.gradle\n```groovy\nplugins {\n    id 'java'\n    id 'org.springframework.boot' version '3.0.0'\n}\n\ndependencies {\n    implementation 'org.springframework.boot:spring-boot-starter-web'\n    testImplementation 'junit:junit:5.9.0'\n}\n```\n\n## 📌 คำสั่งพื้นฐาน\n```bash\ngradle build     # Build project\ngradle test      # Run tests\ngradle run       # Run app\ngradle clean     # Clean build\n```\n"
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "label": "Testing",
+      "description": "การทดสอบ",
+      "level": "MID",
+      "children": [
+        {
+          "id": "junit",
+          "label": "JUnit 5",
+          "description": "JUnit",
+          "level": "MID",
+          "content": "# JUnit 5\n## 🎯 คืออะไร?\n- Testing framework มาตรฐานสำหรับ Java\n\n## 💡 ตัวอย่าง\n```java\nimport org.junit.jupiter.api.*;\n\nclass CalculatorTest {\n    @Test\n    void testAdd() {\n        assertEquals(4, calculator.add(2, 2));\n    }\n    \n    @BeforeEach\n    void setUp() { /* ก่อนแต่ละ test */ }\n    \n    @AfterEach\n    void tearDown() { /* หลังแต่ละ test */ }\n}\n```\n\n## 📌 Annotations สำคัญ\n- @Test, @BeforeEach, @AfterEach\n- @BeforeAll, @AfterAll\n- @Disabled, @DisplayName\n"
+        },
+        {
+          "id": "mockito",
+          "label": "Mockito",
+          "description": "Mocking",
+          "level": "MID",
+          "content": "# Mockito\n## 🎯 คืออะไร?\n- Library สำหรับสร้าง Mock objects\n- ทดสอบ class โดยไม่ต้องพึ่ง dependencies จริง\n\n## 💡 ตัวอย่าง\n```java\n@ExtendWith(MockitoExtension.class)\nclass UserServiceTest {\n    @Mock\n    private UserRepository userRepo;\n    \n    @InjectMocks\n    private UserService userService;\n    \n    @Test\n    void testGetUser() {\n        // Arrange\n        when(userRepo.findById(1L))\n            .thenReturn(new User(\"สมชาย\"));\n        \n        // Act\n        User user = userService.getUser(1L);\n        \n        // Assert\n        assertEquals(\"สมชาย\", user.getName());\n        verify(userRepo).findById(1L);\n    }\n}\n```\n"
+        },
+        {
+          "id": "integration",
+          "label": "Integration Testing",
+          "description": "Integration",
+          "level": "SENIOR",
+          "content": "# Integration Testing\n## 🎯 คืออะไร?\n- ทดสอบหลาย components ทำงานร่วมกัน\n\n## 💡 Spring Boot Test\n```java\n@SpringBootTest\n@AutoConfigureMockMvc\nclass UserControllerIT {\n    @Autowired\n    private MockMvc mockMvc;\n    \n    @Test\n    void testGetUsers() throws Exception {\n        mockMvc.perform(get(\"/api/users\"))\n            .andExpect(status().isOk())\n            .andExpect(jsonPath(\"$.[0].name\")\n                .value(\"สมชาย\"));\n    }\n}\n```\n\n## 📌 แตกต่างจาก Unit Test\n- Unit: ทดสอบทีละ class\n- Integration: ทดสอบหลาย classes ร่วมกัน\n"
+        },
+        {
+          "id": "testcontainers",
+          "label": "Testcontainers",
+          "description": "Testcontainers",
+          "level": "SENIOR",
+          "content": "# Testcontainers\n## 🎯 คืออะไร?\n- รัน Docker containers สำหรับ testing\n- ทดสอบกับ real database/services\n\n## 💡 ตัวอย่าง\n```java\n@Testcontainers\nclass UserRepositoryIT {\n    @Container\n    static PostgreSQLContainer<?> postgres = \n        new PostgreSQLContainer<>(\"postgres:15\");\n    \n    @DynamicPropertySource\n    static void properties(DynamicPropertyRegistry r) {\n        r.add(\"spring.datasource.url\", \n            postgres::getJdbcUrl);\n        r.add(\"spring.datasource.username\", \n            postgres::getUsername);\n        r.add(\"spring.datasource.password\", \n            postgres::getPassword);\n    }\n    \n    @Test\n    void testSaveUser() {\n        // ทดสอบกับ PostgreSQL จริง!\n    }\n}\n```\n"
+        }
+      ]
+    },
+    {
+      "id": "frameworks",
+      "label": "Frameworks",
+      "description": "Frameworks",
+      "level": "SENIOR",
+      "children": [
+        {
+          "id": "spring",
+          "label": "Spring Framework",
+          "description": "Spring",
+          "level": "SENIOR",
+          "children": [
+            {
+              "id": "spring-core",
+              "label": "Spring Core",
+              "description": "Core",
+              "level": "SENIOR",
+              "content": "# Spring Core\n## 🎯 สิ่งที่ต้องเรียนรู้\n- **IoC Container**: จัดการ object lifecycle\n- **Dependency Injection**: @Autowired\n- **Beans**: Objects ที่ Spring จัดการ\n- **Configuration**: @Configuration, @Bean\n"
+            },
+            {
+              "id": "spring-boot",
+              "label": "Spring Boot",
+              "description": "Boot",
+              "level": "SENIOR",
+              "content": "# Spring Boot\n## 🎯 คืออะไร?\n- สร้าง Spring app เร็วด้วย auto-configuration\n\n## 💡 เริ่มต้น\n```java\n@SpringBootApplication\npublic class MyApp {\n    public static void main(String[] args) {\n        SpringApplication.run(MyApp.class, args);\n    }\n}\n```\n\n## 📌 Starters\n- spring-boot-starter-web\n- spring-boot-starter-data-jpa\n- spring-boot-starter-security\n"
+            },
+            {
+              "id": "spring-mvc",
+              "label": "Spring MVC",
+              "description": "MVC",
+              "level": "SENIOR",
+              "content": "# Spring MVC\n## 🎯 สร้าง REST API\n```java\n@RestController\n@RequestMapping(\"/api/users\")\npublic class UserController {\n    @GetMapping\n    public List<User> getUsers() { }\n    \n    @PostMapping\n    public User createUser(@RequestBody User user) { }\n    \n    @GetMapping(\"/{id}\")\n    public User getUser(@PathVariable Long id) { }\n}\n```\n"
+            },
+            {
+              "id": "spring-data",
+              "label": "Spring Data JPA",
+              "description": "Data",
+              "level": "SENIOR",
+              "content": "# Spring Data JPA\n## 🎯 สร้าง Repository ง่ายๆ\n```java\npublic interface UserRepository \n    extends JpaRepository<User, Long> {\n    \n    List<User> findByName(String name);\n    List<User> findByAgeGreaterThan(int age);\n}\n```\n\n## 📌 ได้อะไรฟรี?\n- CRUD operations\n- Query methods จากชื่อ method\n- Pagination, Sorting\n"
+            },
+            {
+              "id": "spring-security",
+              "label": "Spring Security",
+              "description": "Security",
+              "level": "SENIOR",
+              "content": "# Spring Security\n## 🎯 Authentication & Authorization\n- ยืนยันตัวตน (Login)\n- กำหนดสิทธิ์ (Roles/Permissions)\n\n## 📌 ฟีเจอร์สำคัญ\n- JWT Authentication\n- OAuth2/OpenID Connect\n- CSRF Protection\n- CORS Configuration\n"
+            },
+            {
+              "id": "spring-cloud",
+              "label": "Spring Cloud",
+              "description": "Cloud",
+              "level": "EXPERT",
+              "content": "# Spring Cloud\n## 🎯 สำหรับ Microservices\n- **Config Server**: จัดการ configuration ศูนย์กลาง\n- **Eureka**: Service Discovery\n- **Gateway**: API Gateway\n- **Circuit Breaker**: Resilience4j\n"
+            }
+          ]
+        },
+        {
+          "id": "hibernate",
+          "label": "Hibernate / JPA",
+          "description": "ORM",
+          "level": "SENIOR",
+          "content": "# Hibernate / JPA\n## 🎯 ORM คืออะไร?\n- แมพ Java Objects กับ Database Tables\n\n## 💡 Entity\n```java\n@Entity\n@Table(name = \"users\")\npublic class User {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Long id;\n    \n    @Column(nullable = false)\n    private String name;\n    \n    @OneToMany(mappedBy = \"user\")\n    private List<Order> orders;\n}\n```\n\n## 📌 Relationships\n@OneToOne, @OneToMany, @ManyToOne, @ManyToMany\n"
+        },
+        {
+          "id": "quarkus",
+          "label": "Quarkus",
+          "description": "Quarkus",
+          "level": "EXPERT",
+          "content": "# Quarkus\n## 🎯 \"Supersonic Subatomic Java\"\n- เร็วมาก, memory ต่ำ\n- เหมาะกับ Containers/Serverless\n- GraalVM Native Image support\n"
+        },
+        {
+          "id": "micronaut",
+          "label": "Micronaut",
+          "description": "Micronaut",
+          "level": "EXPERT",
+          "content": "# Micronaut\n## 🎯 คืออะไร?\n- Modern JVM framework\n- Compile-time DI (ไม่ใช้ reflection)\n- เหมาะกับ Microservices\n- GraalVM support\n"
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "label": "Databases",
+      "description": "ฐานข้อมูล",
+      "level": "MID",
+      "children": [
+        {
+          "id": "jdbc",
+          "label": "JDBC",
+          "description": "JDBC",
+          "level": "MID",
+          "content": "# JDBC\n## 🎯 Low-level Database Access\n```java\nConnection conn = DriverManager.getConnection(url);\nPreparedStatement ps = conn.prepareStatement(\n    \"SELECT * FROM users WHERE id = ?\");\nps.setLong(1, userId);\nResultSet rs = ps.executeQuery();\n```\n"
+        },
+        {
+          "id": "postgres",
+          "label": "PostgreSQL",
+          "description": "PostgreSQL",
+          "level": "MID",
+          "content": "# PostgreSQL\n## 🎯 ทำไมเลือก?\n- Open-source, แข็งแกร่ง, มาตรฐานสูง\n- ACID compliant\n- JSON support (JSONB)\n- Full-text search\n"
+        },
+        {
+          "id": "mysql",
+          "label": "MySQL",
+          "description": "MySQL",
+          "level": "MID",
+          "content": "# MySQL\n## 🎯 ทำไมเลือก?\n- นิยมสูงที่สุด, ใช้ง่าย\n- เหมาะกับงาน read-heavy\n- Community ใหญ่\n"
+        },
+        {
+          "id": "mongodb",
+          "label": "MongoDB",
+          "description": "MongoDB",
+          "level": "SENIOR",
+          "content": "# MongoDB\n## 🎯 NoSQL Document Database\n- เก็บเป็น JSON documents\n- Schema flexible\n- เหมาะกับข้อมูลที่โครงสร้างเปลี่ยนบ่อย\n"
+        },
+        {
+          "id": "redis",
+          "label": "Redis",
+          "description": "Redis",
+          "level": "SENIOR",
+          "content": "# Redis\n## 🎯 In-Memory Data Store\n- เร็วมาก! (microseconds)\n\n## 📌 ใช้ทำอะไร?\n- Caching\n- Session storage\n- Rate limiting\n- Pub/Sub messaging\n"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "Developer Tools",
+      "description": "เครื่องมือ",
+      "level": "MID",
+      "children": [
+        {
+          "id": "git",
+          "label": "Git",
+          "description": "Version Control",
+          "level": "JUNIOR",
+          "content": "# Git\n## 🎯 คำสั่งพื้นฐาน\n```bash\ngit init              # สร้าง repo\ngit clone <url>       # Clone repo\ngit add .             # Stage changes\ngit commit -m \"msg\"   # Commit\ngit push              # Push to remote\ngit pull              # Pull updates\n```\n\n## 📌 Branching\n```bash\ngit branch feature    # สร้าง branch\ngit checkout feature  # สลับ branch\ngit merge feature     # Merge branch\n```\n"
+        },
+        {
+          "id": "docker",
+          "label": "Docker",
+          "description": "Containers",
+          "level": "MID",
+          "content": "# Docker\n## 🎯 คืออะไร?\n- รัน app ใน containers (แยกจาก host)\n\n## 💡 คำสั่งพื้นฐาน\n```bash\ndocker build -t myapp .     # Build image\ndocker run -p 8080:8080 myapp  # Run container\ndocker ps                   # List containers\ndocker compose up           # Run with compose\n```\n"
+        },
+        {
+          "id": "ide",
+          "label": "IDEs",
+          "description": "IDEs",
+          "level": "JUNIOR",
+          "content": "# IDEs for Java\n## 🎯 แนะนำ\n- **IntelliJ IDEA**: ยอดนิยม, ฉลาด, ฟีเจอร์เยอะ\n- **Eclipse**: Open source, เก่าแก่, plugins เยอะ\n- **VS Code**: เบา, ใช้ Extension Pack for Java\n"
+        },
+        {
+          "id": "jira",
+          "label": "Jira",
+          "description": "Project Management",
+          "level": "JUNIOR",
+          "content": "# Jira\n## 🎯 คืออะไร?\n- เครื่องมือบริหารจัดการ Project (Agile/Scrum)\n- Tracking tasks, bugs, features\n"
+        },
+        {
+          "id": "linux",
+          "label": "Linux Basics",
+          "description": "Linux",
+          "level": "MID",
+          "content": "# Linux Basics\n## 🎯 คำสั่งสำคัญ\n```bash\nls -la          # ดูไฟล์ทั้งหมด\ncd /path        # เปลียน directory\ngrep \"text\" file # ค้นหาข้อความ\nchmod +x file   # เปลี่ยน permission\nps aux          # ดู processes\nkill <pid>      # ปิด process\nssh user@host   # Remote login\n```\n"
+        }
+      ]
+    }
+  ]
+}

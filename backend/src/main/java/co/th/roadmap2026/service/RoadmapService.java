@@ -1,19 +1,24 @@
 package co.th.roadmap2026.service;
 
-import co.th.roadmap2026.data.BackendRoadmapData;
-import co.th.roadmap2026.data.JavaRoadmapData;
+import co.th.roadmap2026.component.RoadmapDataLoader;
 import co.th.roadmap2026.model.RoadmapTopic;
 import org.springframework.stereotype.Service;
 
 @Service
 public class RoadmapService {
 
+    private final RoadmapDataLoader roadmapDataLoader;
+
+    public RoadmapService(RoadmapDataLoader roadmapDataLoader) {
+        this.roadmapDataLoader = roadmapDataLoader;
+    }
+
     public RoadmapTopic getJavaRoadmap() {
-        return JavaRoadmapData.get();
+        return roadmapDataLoader.getRoadmap("java");
     }
 
     public RoadmapTopic getBackendRoadmap() {
-        return BackendRoadmapData.get();
+        return roadmapDataLoader.getRoadmap("backend");
     }
 
     public RoadmapTopic getRoadmapStructure(String roadmapId) {

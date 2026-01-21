@@ -1,0 +1,422 @@
+{
+  "id": "backend",
+  "label": "Backend Developer",
+  "description": "Complete Backend Developer Roadmap 2026",
+  "level": "JUNIOR",
+  "children": [
+    {
+      "id": "internet",
+      "label": "Internet",
+      "description": "พื้นฐาน Internet",
+      "level": "JUNIOR",
+      "children": [
+        {
+          "id": "how-internet-works",
+          "label": "How does the Internet work?",
+          "description": "Internet ทำงานยังไง",
+          "level": "JUNIOR"
+        },
+        { "id": "http", "label": "HTTP", "description": "HTTP Protocol", "level": "JUNIOR" },
+        {
+          "id": "browsers",
+          "label": "What is a Browser?",
+          "description": "Browser",
+          "level": "JUNIOR"
+        },
+        { "id": "dns", "label": "DNS", "description": "DNS", "level": "JUNIOR" },
+        { "id": "domain", "label": "Domain Name", "description": "Domain", "level": "JUNIOR" },
+        { "id": "hosting", "label": "Hosting", "description": "Web Hosting", "level": "JUNIOR" }
+      ]
+    },
+    {
+      "id": "frontend-basics",
+      "label": "Frontend Knowledge",
+      "description": "ความรู้ Frontend เบื้องต้น",
+      "level": "JUNIOR",
+      "children": [
+        { "id": "html", "label": "HTML Basics", "description": "HTML", "level": "JUNIOR" },
+        { "id": "css", "label": "CSS Basics", "description": "CSS", "level": "JUNIOR" },
+        {
+          "id": "javascript",
+          "label": "JavaScript Basics",
+          "description": "JavaScript",
+          "level": "JUNIOR"
+        }
+      ]
+    },
+    {
+      "id": "os",
+      "label": "OS and General Knowledge",
+      "description": "ระบบปฏิบัติการ",
+      "level": "JUNIOR",
+      "children": [
+        {
+          "id": "terminal",
+          "label": "Terminal Usage",
+          "description": "Terminal",
+          "level": "JUNIOR"
+        },
+        { "id": "os-works", "label": "How OSs work", "description": "OS", "level": "JUNIOR" },
+        {
+          "id": "process",
+          "label": "Process Management",
+          "description": "Process",
+          "level": "MID"
+        },
+        {
+          "id": "threads-os",
+          "label": "Threads & Concurrency",
+          "description": "Threads",
+          "level": "MID"
+        },
+        {
+          "id": "memory-os",
+          "label": "Memory Management",
+          "description": "Memory",
+          "level": "MID"
+        },
+        { "id": "io", "label": "I/O Management", "description": "I/O", "level": "MID" },
+        { "id": "posix", "label": "POSIX Basics", "description": "POSIX", "level": "MID" },
+        {
+          "id": "networking",
+          "label": "Networking Concepts",
+          "description": "Networking",
+          "level": "MID"
+        }
+      ]
+    },
+    {
+      "id": "languages",
+      "label": "Programming Languages",
+      "description": "ภาษาโปรแกรม",
+      "level": "JUNIOR",
+      "children": [
+        { "id": "java", "label": "Java", "description": "Java", "level": "JUNIOR" },
+        { "id": "python", "label": "Python", "description": "Python", "level": "JUNIOR" },
+        {
+          "id": "javascript-be",
+          "label": "JavaScript / Node.js",
+          "description": "Node.js",
+          "level": "JUNIOR"
+        },
+        { "id": "go", "label": "Go", "description": "Golang", "level": "MID" },
+        { "id": "rust", "label": "Rust", "description": "Rust", "level": "SENIOR" }
+      ]
+    },
+    {
+      "id": "vcs",
+      "label": "Version Control",
+      "description": "Version Control",
+      "level": "JUNIOR",
+      "children": [
+        { "id": "git", "label": "Git", "description": "Git", "level": "JUNIOR" },
+        { "id": "github", "label": "GitHub", "description": "GitHub", "level": "JUNIOR" },
+        { "id": "gitlab", "label": "GitLab", "description": "GitLab", "level": "JUNIOR" }
+      ]
+    },
+    {
+      "id": "databases",
+      "label": "Databases",
+      "description": "ฐานข้อมูล",
+      "level": "MID",
+      "children": [
+        {
+          "id": "relational",
+          "label": "Relational Databases",
+          "description": "SQL DBs",
+          "level": "MID",
+          "children": [
+            {
+              "id": "postgresql",
+              "label": "PostgreSQL",
+              "description": "PostgreSQL",
+              "level": "MID"
+            },
+            { "id": "mysql", "label": "MySQL", "description": "MySQL", "level": "MID" }
+          ]
+        },
+        {
+          "id": "nosql",
+          "label": "NoSQL Databases",
+          "description": "NoSQL",
+          "level": "MID",
+          "children": [
+            { "id": "mongodb", "label": "MongoDB", "description": "MongoDB", "level": "MID" },
+            { "id": "redis", "label": "Redis", "description": "Redis", "level": "MID" },
+            {
+              "id": "elasticsearch",
+              "label": "Elasticsearch",
+              "description": "Search",
+              "level": "SENIOR"
+            }
+          ]
+        },
+        { "id": "orm", "label": "ORMs", "description": "ORM", "level": "MID" },
+        { "id": "acid", "label": "ACID", "description": "ACID", "level": "MID" },
+        {
+          "id": "transactions",
+          "label": "Transactions",
+          "description": "Transactions",
+          "level": "MID"
+        },
+        { "id": "n+1", "label": "N+1 Problem", "description": "N+1", "level": "MID" },
+        {
+          "id": "normalization",
+          "label": "Normalization",
+          "description": "Normalization",
+          "level": "MID"
+        },
+        { "id": "indexes", "label": "Indexes", "description": "Indexes", "level": "MID" },
+        {
+          "id": "replication",
+          "label": "Replication",
+          "description": "Replication",
+          "level": "SENIOR"
+        },
+        { "id": "sharding", "label": "Sharding", "description": "Sharding", "level": "EXPERT" }
+      ]
+    },
+    {
+      "id": "apis",
+      "label": "APIs",
+      "description": "การออกแบบ APIs",
+      "level": "MID",
+      "children": [
+        { "id": "rest", "label": "REST", "description": "REST APIs", "level": "MID" },
+        { "id": "json", "label": "JSON APIs", "description": "JSON", "level": "MID" },
+        { "id": "graphql", "label": "GraphQL", "description": "GraphQL", "level": "SENIOR" },
+        { "id": "grpc", "label": "gRPC", "description": "gRPC", "level": "SENIOR" },
+        { "id": "soap", "label": "SOAP", "description": "SOAP", "level": "MID" },
+        { "id": "hateoas", "label": "HATEOAS", "description": "HATEOAS", "level": "SENIOR" },
+        { "id": "openapi", "label": "OpenAPI Spec", "description": "Swagger", "level": "MID" }
+      ]
+    },
+    {
+      "id": "caching",
+      "label": "Caching",
+      "description": "การ Cache",
+      "level": "SENIOR",
+      "children": [
+        { "id": "cdn", "label": "CDN", "description": "CDN", "level": "SENIOR" },
+        {
+          "id": "server-side",
+          "label": "Server-side Caching",
+          "description": "Server Cache",
+          "level": "SENIOR"
+        },
+        { "id": "redis-cache", "label": "Redis", "description": "Redis", "level": "SENIOR" },
+        { "id": "memcached", "label": "Memcached", "description": "Memcached", "level": "SENIOR" }
+      ]
+    },
+    {
+      "id": "security",
+      "label": "Web Security",
+      "description": "ความปลอดภัย",
+      "level": "SENIOR",
+      "children": [
+        { "id": "https", "label": "HTTPS", "description": "HTTPS", "level": "MID" },
+        { "id": "cors", "label": "CORS", "description": "CORS", "level": "MID" },
+        {
+          "id": "csp",
+          "label": "Content Security Policy",
+          "description": "CSP",
+          "level": "SENIOR"
+        },
+        { "id": "owasp", "label": "OWASP Risks", "description": "OWASP", "level": "SENIOR" },
+        {
+          "id": "hashing",
+          "label": "Hashing (bcrypt, scrypt)",
+          "description": "Hashing",
+          "level": "SENIOR"
+        },
+        { "id": "ssl-tls", "label": "SSL/TLS", "description": "SSL/TLS", "level": "SENIOR" }
+      ]
+    },
+    {
+      "id": "auth",
+      "label": "Authentication",
+      "description": "การยืนยันตัวตน",
+      "level": "SENIOR",
+      "children": [
+        { "id": "basic-auth", "label": "Basic Auth", "description": "Basic", "level": "MID" },
+        { "id": "token-auth", "label": "Token Auth", "description": "Token", "level": "SENIOR" },
+        { "id": "oauth", "label": "OAuth", "description": "OAuth", "level": "SENIOR" },
+        { "id": "jwt", "label": "JWT", "description": "JWT", "level": "SENIOR" },
+        { "id": "sso", "label": "SSO", "description": "SSO", "level": "SENIOR" },
+        { "id": "saml", "label": "SAML", "description": "SAML", "level": "EXPERT" }
+      ]
+    },
+    {
+      "id": "testing",
+      "label": "Testing",
+      "description": "การทดสอบ",
+      "level": "MID",
+      "children": [
+        { "id": "unit", "label": "Unit Testing", "description": "Unit", "level": "MID" },
+        {
+          "id": "integration",
+          "label": "Integration Testing",
+          "description": "Integration",
+          "level": "MID"
+        },
+        {
+          "id": "functional",
+          "label": "Functional Testing",
+          "description": "Functional",
+          "level": "SENIOR"
+        },
+        { "id": "e2e", "label": "E2E Testing", "description": "E2E", "level": "SENIOR" }
+      ]
+    },
+    {
+      "id": "cicd",
+      "label": "CI/CD",
+      "description": "Continuous Integration/Deployment",
+      "level": "SENIOR",
+      "children": [
+        {
+          "id": "github-actions",
+          "label": "GitHub Actions",
+          "description": "GitHub Actions",
+          "level": "MID"
+        },
+        { "id": "jenkins", "label": "Jenkins", "description": "Jenkins", "level": "SENIOR" },
+        { "id": "gitlab-ci", "label": "GitLab CI", "description": "GitLab CI", "level": "SENIOR" },
+        { "id": "circle-ci", "label": "CircleCI", "description": "CircleCI", "level": "SENIOR" }
+      ]
+    },
+    {
+      "id": "patterns",
+      "label": "Design & Development Principles",
+      "description": "หลักการออกแบบ",
+      "level": "SENIOR",
+      "children": [
+        { "id": "solid", "label": "SOLID", "description": "SOLID", "level": "SENIOR" },
+        { "id": "kiss", "label": "KISS", "description": "Keep It Simple", "level": "MID" },
+        {
+          "id": "yagni",
+          "label": "YAGNI",
+          "description": "You Aren't Gonna Need It",
+          "level": "MID"
+        },
+        { "id": "dry", "label": "DRY", "description": "Don't Repeat Yourself", "level": "MID" },
+        {
+          "id": "gof",
+          "label": "GoF Design Patterns",
+          "description": "Design Patterns",
+          "level": "SENIOR"
+        },
+        { "id": "ddd", "label": "Domain-Driven Design", "description": "DDD", "level": "EXPERT" },
+        { "id": "tdd", "label": "Test-Driven Development", "description": "TDD", "level": "SENIOR" }
+      ]
+    },
+    {
+      "id": "architecture",
+      "label": "Architectural Patterns",
+      "description": "สถาปัตยกรรม",
+      "level": "SENIOR",
+      "children": [
+        {
+          "id": "monolithic",
+          "label": "Monolithic Apps",
+          "description": "Monolith",
+          "level": "MID"
+        },
+        {
+          "id": "microservices",
+          "label": "Microservices",
+          "description": "Microservices",
+          "level": "SENIOR"
+        },
+        { "id": "soa", "label": "SOA", "description": "SOA", "level": "SENIOR" },
+        {
+          "id": "serverless",
+          "label": "Serverless",
+          "description": "Serverless",
+          "level": "SENIOR"
+        },
+        {
+          "id": "service-mesh",
+          "label": "Service Mesh",
+          "description": "Istio/Linkerd",
+          "level": "EXPERT"
+        }
+      ]
+    },
+    {
+      "id": "message-brokers",
+      "label": "Message Brokers",
+      "description": "Message Queue",
+      "level": "SENIOR",
+      "children": [
+        { "id": "rabbitmq", "label": "RabbitMQ", "description": "RabbitMQ", "level": "SENIOR" },
+        { "id": "kafka", "label": "Kafka", "description": "Kafka", "level": "SENIOR" },
+        { "id": "sqs", "label": "AWS SQS", "description": "SQS", "level": "SENIOR" }
+      ]
+    },
+    {
+      "id": "containerization",
+      "label": "Containerization",
+      "description": "Containers",
+      "level": "SENIOR",
+      "children": [
+        { "id": "docker", "label": "Docker", "description": "Docker", "level": "MID" },
+        { "id": "kubernetes", "label": "Kubernetes", "description": "K8s", "level": "SENIOR" },
+        { "id": "lxc", "label": "LXC", "description": "LXC", "level": "EXPERT" }
+      ]
+    },
+    {
+      "id": "webservers",
+      "label": "Web Servers",
+      "description": "Web Server",
+      "level": "MID",
+      "children": [
+        { "id": "nginx", "label": "Nginx", "description": "Nginx", "level": "MID" },
+        { "id": "apache", "label": "Apache", "description": "Apache", "level": "MID" },
+        { "id": "caddy", "label": "Caddy", "description": "Caddy", "level": "MID" }
+      ]
+    },
+    {
+      "id": "scaling",
+      "label": "Building for Scale",
+      "description": "การ Scale",
+      "level": "EXPERT",
+      "children": [
+        {
+          "id": "mitigation",
+          "label": "Mitigation Strategies",
+          "description": "Mitigation",
+          "level": "SENIOR"
+        },
+        {
+          "id": "horizontal",
+          "label": "Horizontal Scaling",
+          "description": "Horizontal",
+          "level": "SENIOR"
+        },
+        {
+          "id": "vertical",
+          "label": "Vertical Scaling",
+          "description": "Vertical",
+          "level": "SENIOR"
+        },
+        {
+          "id": "observability",
+          "label": "Observability",
+          "description": "Monitoring",
+          "level": "SENIOR",
+          "children": [
+            { "id": "logging", "label": "Logging", "description": "Logs", "level": "SENIOR" },
+            {
+              "id": "monitoring",
+              "label": "Monitoring",
+              "description": "Metrics",
+              "level": "SENIOR"
+            },
+            { "id": "tracing", "label": "Tracing", "description": "Tracing", "level": "SENIOR" }
+          ]
+        }
+      ]
+    }
+  ]
+}
